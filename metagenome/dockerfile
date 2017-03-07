@@ -22,3 +22,6 @@
   RUN cd paladin/
   RUN make
   
+#####################################################################################################
+# Set the environment variables
+    ENV PATH $PATH:/paladin
