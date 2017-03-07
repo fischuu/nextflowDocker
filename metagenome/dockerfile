@@ -1,0 +1,16 @@
+######################################################################################################  
+# Set the starting image
+  FROM ubuntu:zesty
+
+  MAINTAINER Daniel Fischer <daniel.fischer@luke.fi>
+  
+######################################################################################################  
+# Install the required system components
+  RUN apt-get update && apt-get install -y \
+              build-essential \
+              libcurl4-openssl-dev \
+              git \
+              make \
+              gcc \
+              zlib1g-dev \
+&& rm -rf /var/lib/apt/lists/* 
